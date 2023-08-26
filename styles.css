@@ -34,13 +34,18 @@ a {
 
 /** Navbar **/
 .marca-central{     
-    color: var(--texto);              
+    color: var(--texto); 
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);             
 }
 .marca-central:hover{
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 .marca-responsive{
     color: var(--texto);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+.marca-responsive:hover{    
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .navbar {
@@ -54,10 +59,11 @@ a {
     color: var(--texto) !important;
     letter-spacing: 1px;
     border-bottom: 1px solid rgb(207, 203, 203);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); 
 }
 
 .navbar-nav .nav-link:hover{
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);     
+    text-shadow: 3px 2px 4px rgba(0, 0, 0, 0.5);     
 }
 
 .logo{
@@ -336,7 +342,8 @@ footer p{
 }
 
 .p-footer{    
-    text-align: center;   
+    text-align: center; 
+    font-size: large;  
 }
 
 /** Media Querys **/
