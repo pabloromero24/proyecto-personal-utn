@@ -220,7 +220,7 @@ slide-right{
 
 footer{
     width: 100%;    
-    background-image: url(/Módulo-3/Unidad-1/proyecto-personal/recursos/imagenes/fondo.jpg);    
+    background-image: url(/recursos/imagenes/fondo.jpg);    
     background-attachment: fixed;
     clear: both; 
     font-family: var(--fuentePrincipal);

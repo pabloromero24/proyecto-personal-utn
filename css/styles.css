@@ -220,7 +220,7 @@ slide-right{
 
 footer{
     width: 100%;    
-    background-image: url(/Módulo-3/Unidad-1/proyecto-personal/recursos/imagenes/fondo.jpg);    
+    background-image: url(/recursos/imagenes/fondo.jpg);    
     background-attachment: fixed;
     clear: both; 
     font-family: var(--fuentePrincipal);
@@ -376,6 +376,9 @@ footer p{
 }
 
 @media (max-width: 650px) {
+    .ratio{
+        margin-top: 10% !important;
+    }
     .carousel-caption{        
         margin-bottom: 10%;
     }
@@ -417,8 +420,12 @@ footer p{
 }
 
 @media (max-width: 480px) {
-    .marca-responsive-nosotros{        
-        font-size:medium;
+    .logo{
+        width: 23%; 
+        height: 23%; 
+    }
+    .ratio{
+        margin-top: 20% !important;
     }
     .carousel-caption{        
         margin-bottom: 6%;
@@ -454,6 +461,9 @@ footer p{
     .section-principal{
         display: none !important;
      }
+     .p-footer{
+        font-size: medium;
+     }
 }
 
 @media (max-width: 400px) {
@@ -461,11 +471,14 @@ footer p{
         width: 20%; 
         height: 20%; 
     }
-    .marca-responsive{
-        font-size: 25px;
+    .ratio{
+        margin-top: 20% !important;
     }
-    .ratio video{
-        margin-top: 15px;
+    .marca-responsive{
+        font-size: 20px;
+    }
+    .ratio{
+        margin-top: 20% !important;
     }
     .carousel-caption h5 {    
         font-size: 10px;            
@@ -489,17 +502,24 @@ footer p{
         margin: 7px;
         width: 20%;         
         height: 20%;
-     }     
+     }  
+     .p-footer{
+        font-size: small;
+     }
+   
 }
 @media (max-width: 320px) {
+    .ratio{
+        margin-top: 20% !important;
+    }
     .marca-responsive{
-        font-size: 16px;
+        font-size: 14px;
     }
     .carousel-caption h5 {    
-        font-size: 9px;            
+        font-size: 8px;            
     } 
     .image-cont .btn{
-        width: 85%;
+        width: 90%;
         height: 15%;
         font-size: 6px;        
     }
