@@ -276,14 +276,11 @@ footer p{
 }
 
 /** Media Querys **/
-@media (max-width: 1400px) {
-    .card{
-        width: 25rem !important;
-    }
-    
-}
 
 @media (max-width: 1150px) {  
+    .marca-responsive{
+        font-size: larger;
+    }
     .img-central{
         width: 85% !important;
     }  
@@ -420,6 +417,9 @@ footer p{
 }
 
 @media (max-width: 480px) {
+    .marca-responsive{
+        font-size: medium;
+    }
     .logo{
         width: 23%; 
         height: 23%; 
@@ -475,7 +475,7 @@ footer p{
         margin-top: 20% !important;
     }
     .marca-responsive{
-        font-size: 20px;
+        font-size: 18px;
     }
     .ratio{
         margin-top: 20% !important;
