@@ -468,14 +468,14 @@ footer p{
 
 @media (max-width: 400px) {
     .logo{
-        width: 20%; 
-        height: 20%; 
+        width: 23%; 
+        height: 23%; 
     }
     .ratio{
         margin-top: 20% !important;
     }
     .marca-responsive{
-        font-size: 20px;
+        font-size: 25px;
     }
     .ratio{
         margin-top: 20% !important;
