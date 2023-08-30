@@ -307,13 +307,7 @@ footer p{
     }
     .marca-responsive{
         font-size: 20px;
-    }    
-    .card-s h2{
-        font-size: 2rem;
-    }
-    .card-s p{
-        font-size: small;
-    }
+    }       
     .social svg{
         margin: 7px;
         width: 20%;         
