@@ -467,6 +467,9 @@ footer p{
 }
 
 @media (max-width: 400px) {
+    .navbar .container{
+        margin-right: 4%;
+    }
     .logo{
         width: 20%; 
         height: 20%; 
