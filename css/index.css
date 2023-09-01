@@ -9,16 +9,13 @@
     --fuentePrincipal:'Roboto Slab', sans-serif;
     --fuenteSecundaria: 'Barriecito', cursive;   
     }
-
 html {
      box-sizing: border-box;
      font-size: 62.5%;      
- }
-    
+ }    
  *, *:before, *:after {
     box-sizing: inherit;
 }
-
 body {    
     background-color: var(--fondo);    
     font-size: 2rem;
@@ -30,6 +27,7 @@ a {
 }
 
 /** Navbar **/
+
 .marca-central{     
     color: var(--texto); 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);             
@@ -56,7 +54,6 @@ a {
 .navbar-nav .nav-link:hover{
     text-shadow: 5px 3px 5px rgba(0, 0, 0, 0.5);     
 }
-
 .logo{
     width: 10%; 
     height: 10%; 
@@ -67,31 +64,25 @@ a {
     margin-left: 6%;
     box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.5);         
 }
-
 .logo:hover{
     box-shadow: 6px 2px 6px rgba(0, 0, 0, 0.5);
 }
-
 .menu{    
     background-color: #333;
 }
-
 .dropdown-item{
     font-size:large;          
 }
-
 .dropdown-item:hover{
     color: #333 !important;
     background-color:#98EECC;
     text-shadow: 4px 3px 4px rgba(0, 0, 0, 0.5);
 }
-
 .skate-box{
     width: 100%; 
     overflow: visible; 
     position: relative;
 }
-
 .logo-skate{
     width: 15%; 
     height: auto;
@@ -115,11 +106,32 @@ slide-right{
     z-index: -1; 
     padding: 0 5% 0 5%;               
 }
+.overlay-video{
+    position: absolute;
+    margin: auto;      
+    width: 90%;
+    height: 90%;           
+    text-align: center;
+    z-index: 2; 
+    opacity: 0;
+    transition: all .2s ease-out;
+}
+  .overlay-video:hover{
+    color: white;
+    opacity: 1;
+    background: rgba(1, 1, 1, 0.6);
+} 
+  .video-container h1{
+    padding-top: 25% !important;    
+}  
+  .video-container h1, p{    
+    font-size: 7vh;
+} 
 
 /** Main Section Carousel **/
 
 .carousel-inner img{
-    width: 65%;
+    width: 75%;    
 }
 .carousel-caption h5 {    
     font-size: 35px;
@@ -159,11 +171,13 @@ slide-right{
 
 /** Main Section Imagenes **/
 
+.image-cont{
+    margin-top: 3%;
+}
 .img-container {
     position: relative; 
-  }
-  
-  .image-overlay {
+}  
+.image-overlay {
     position: absolute;
     top: 0;
     left: 1;
@@ -172,8 +186,8 @@ slide-right{
     background: linear-gradient(270deg,#222222 15%, rgba(255, 255, 255, 0.2) 80%); 
     border-radius: 5px;
     z-index: 2; 
-  }
-  .image-overlay-2 {
+}
+.image-overlay-2 {
     position: absolute;
     top: 0;
     left: 1;    
@@ -182,21 +196,18 @@ slide-right{
     background: linear-gradient(90deg,#222222 10%, rgba(255, 255, 255, 0.2) 80%);
     border-radius: 5px; 
     z-index: 2; 
-  }
-    
+}    
   .img-container img {       
     position: relative; 
     z-index: 1; 
-  }
-
-  .image-cont p{
+}
+.image-cont p{
     font-family: var(--fuenteSecundaria);
     font-size: 40px;
     color: #fff; 
     margin-top: 50%;   
 }
-
-  .image-cont .btn{
+.image-cont .btn{
     width: 30%;
     height: 8%;
     font-size: 15px;
@@ -209,7 +220,6 @@ slide-right{
     border-radius: 5px; 
     transition: 0.3s;  
 }
-
 .image-cont .btn:hover{ 
     color: #222222;   
     background: var(--Secundario);
@@ -230,7 +240,6 @@ footer{
     padding: 5px 0;
     margin-top: 20px;    
 }
-
 .nosotros,
 .product,
 .social {
@@ -238,38 +247,31 @@ footer{
   padding: 0;
   margin: 0;  
 }
-
 footer a{
     color: var(--Secundario);
 }
-
 .social svg{
     margin: 10px; 
     transition: 0.4s;         
 }
-
 footer a:hover{
     color: var(--texto);
 }
-
 .social svg:hover{
     transform: scale(1.2);
     color: var(--texto);
 }
-
 footer li{    
     margin-bottom: 30px;
     font-size: large;
     text-align: center;
 }
-
 footer p{
     font-size: x-large;
     text-align: center;
-    margin-top: 5vh;
+    margin-top: 2vh;
     border-bottom: 1px solid gray;
 }
-
 .p-footer{    
     text-align: center; 
     font-size: large;  
@@ -277,9 +279,19 @@ footer p{
 
 /** Media Querys **/
 
-@media (max-width: 1150px) {  
+@media (max-width: 1150px) { 
+    .ratio{
+        margin-top: 10% !important;
+    }
+    .logo{
+        width: 15%;
+        height: 15%;
+    } 
+    .navbar-toggler{
+        margin-right: 4%;
+    }
     .marca-responsive{
-        font-size: larger;
+        font-size: xx-large;
     }
     .img-central{
         width: 85% !important;
@@ -287,6 +299,12 @@ footer p{
     .skate-box {
         display: none;
     }
+    .card-img-overlay h1{
+        padding-top: 13% !important;    
+    }  
+      .card-img-overlay h1, p{        
+        font-size: 3vh;
+    } 
     .carousel-caption{
         margin-bottom: 10%;
     }
@@ -320,16 +338,26 @@ footer p{
     }
     .card p{
         font-size: medium;
-    }  
+    } 
     footer p{
         font-size: larger;
         margin-top: 1vh;
-    }  
+    } 
+    .social svg{
+        width: 10%;         
+        height: 10%;
+     }    
 }
 @media (max-width: 768px) {    
     .skate-box {
         display: none;
-    }    
+    }  
+    .card-img-overlay h1{
+        padding-top: 18% !important;    
+    }  
+      .card-img-overlay h1, p{        
+        font-size: 4vh;
+    }   
     .carousel-caption{
         margin-bottom: 10%;
     }
@@ -354,9 +382,17 @@ footer p{
         font-size: 12px;
     } 
     .social svg{
-        width: 11%;         
-        height: 11%;
-     } 
+        width: 10%;         
+        height: 10%;
+     }
+     footer p{
+        font-size: large;
+        margin-top: 1vh;
+    }  
+    .nosotros a,
+    .product a{
+        font-size: medium;
+    }  
      .section-principal{
         display: block !important;
      }
@@ -374,15 +410,14 @@ footer p{
     .order-3 {
         order: 3;
     }
-     footer p{
-        font-size: large;
-        margin-top: 1vh;
-    } 
 }
 
 @media (max-width: 650px) {
+    .marca-responsive{
+        font-size: larger;
+    }
     .ratio{
-        margin-top: 10% !important;
+        margin-top: 8% !important;
     }
     .carousel-caption{        
         margin-bottom: 10%;
@@ -421,20 +456,30 @@ footer p{
     .card-s{
         width: 30rem !important;
     }
+    .social svg{
+        width: 10%;         
+        height: 10%;
+     }
        
 }
 
 @media (max-width: 480px) {
     .marca-responsive{
-        font-size: medium;
+        font-size: large;
     }
     .logo{
         width: 23%; 
         height: 23%; 
     }
     .ratio{
-        margin-top: 20% !important;
+        margin-top: 16% !important;
     }
+    .card-img-overlay h1{
+        padding-top: 15% !important;    
+    }  
+      .card-img-overlay h1, p{       
+        font-size: 3vh;
+    } 
     .carousel-caption{        
         margin-bottom: 6%;
     }
@@ -460,8 +505,8 @@ footer p{
         font-size: 8px;        
     }  
     .social svg{      
-       width: 22%;         
-       height: 22%;
+       width: 20%;         
+       height: 20%;
     } 
     .title-social{
         display: none;
@@ -475,22 +520,22 @@ footer p{
 }
 
 @media (max-width: 400px) {
-    .navbar .container{
-        margin-right: 4%;
-    }
     .logo{
         width: 20%; 
         height: 20%; 
     }
     .ratio{
-        margin-top: 20% !important;
+        margin-top: 15% !important;
     }
     .marca-responsive{
         font-size: 18px;
-    }
-    .ratio{
-        margin-top: 20% !important;
-    }
+    } 
+    .card-img-overlay h1{
+        padding-top: 13% !important;    
+    }  
+      .card-img-overlay h1, p{        
+        font-size: 3vh;
+    }    
     .carousel-caption h5 {    
         font-size: 10px;            
     } 
@@ -526,6 +571,12 @@ footer p{
     .marca-responsive{
         font-size: 14px;
     }
+    .card-img-overlay h1{
+        padding-top: 14% !important;    
+    }  
+      .card-img-overlay h1, p{        
+        font-size: 4vh;
+    }  
     .carousel-caption h5 {    
         font-size: 8px;            
     } 
@@ -535,7 +586,11 @@ footer p{
         font-size: 6px;        
     }
     .social svg{
-        width: 10%;
+        width: 20%;
+        height: 20%;
         margin-bottom: 20px;        
-    }    
+    }  
+     .p-footer{
+        font-size: medium;
+    }   
 }
